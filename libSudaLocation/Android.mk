@@ -23,4 +23,6 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_PATH := $(TARGET_OUT)/fake_packages/$(LOCAL_SRC_FILES)
 
+LOCAL_JAVA_LIBRARIES := org.apache.http.legacy.boot
+
 include $(BUILD_PREBUILT)
