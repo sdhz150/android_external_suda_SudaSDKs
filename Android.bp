@@ -1,0 +1,17 @@
+// Build the Telecom service.
+java_library_static {
+    name: "suda-libSudaSdk",
+    host_supported: false,
+    static_libs: [
+        "libSudaSdk",
+    ],
+    no_framework_libs: true,
+    sdk_version: "core_current",
+}
+
+java_import {
+    name: "libSudaSdk",
+    jars: ["libSudaSdk.jar"],
+    host_supported: false,
+    sdk_version: "current",
+}
